@@ -1,14 +1,18 @@
+package in.connect2tech.html.pdf;
+
 import java.util.*;
 
-public class Main {
+public class HtmlToPdfMain {
 
     public static void main(String... args) {
         PdfFileExporter pdfFileExporter = new PdfFileExporter();
 
         Map<String, Object> data = createTestData();
 
-        String pdfFileName = "order.pdf";
+        String pdfFileName = "new-order.pdf";
         pdfFileExporter.exportPdfFile("order-template", data, pdfFileName);
+
+        System.out.println("Done");
     }
 
     private static Map<String, Object> createTestData() {

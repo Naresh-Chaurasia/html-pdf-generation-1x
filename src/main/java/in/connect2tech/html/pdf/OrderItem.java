@@ -1,3 +1,5 @@
+package in.connect2tech.html.pdf;
+
 public class OrderItem {
     private String description;
     private Integer quantity;
