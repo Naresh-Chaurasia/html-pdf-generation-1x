@@ -8,4 +8,4 @@ echo $my_date
 
 git commit -m "Macbook Pro, Checkin Timestamp::$my_date"
 
-git push origin master
+git push origin main
