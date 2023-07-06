@@ -26,7 +26,19 @@ public class HtmlToPdfMain {
         data.put("order", order);
 
         List<OrderItem> orderItems = new ArrayList<OrderItem>();
-        OrderItem orderItem1 = new OrderItem();
+
+        OrderItem orderItem1 = null;
+        for (int i=0;i<=50;i++){
+            orderItem1 = new OrderItem();
+            orderItem1.setDescription("Test Order Item 1");
+            orderItem1.setQuantity(1+i);
+            orderItem1.setUnitPrice(100.0+i);
+            orderItem1.setTotal(100.0+1);
+            orderItems.add(orderItem1);
+
+        }
+
+        /*OrderItem orderItem1 = new OrderItem();
         orderItem1.setDescription("Test Order Item 1");
         orderItem1.setQuantity(1);
         orderItem1.setUnitPrice(100.0);
@@ -45,7 +57,9 @@ public class HtmlToPdfMain {
         orderItem3.setQuantity(2);
         orderItem3.setUnitPrice(200.0);
         orderItem3.setTotal(400.0);
-        orderItems.add(orderItem3);
+        orderItems.add(orderItem3);*/
+
+
 
         data.put("orderItems", orderItems);
 

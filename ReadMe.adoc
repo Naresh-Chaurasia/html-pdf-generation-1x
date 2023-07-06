@@ -1,0 +1,34 @@
+= PDF Generation
+:toc: left
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+
+NOTE: \d[A-Za-z]{3}\n[A-Za-z]{4}
+
+TIP: TIP
+
+IMPORTANT: IMPORTANT
+
+CAUTION: CAUTION
+
+WARNING: WARNING
+
+* RegEx for Udemy: \d[A-Za-z]{3}\n[A-Za-z]{4}
+* RegEx for Pluralsight: RegEx for 2 String with space:  ^[^\s]+ [^\s]+$
+
+---
+
+|===
+| One | Two
+
+| Foo
+a|
+- Bar
+- Baz
+|===
+
+---
+
+== Wecome to Course
